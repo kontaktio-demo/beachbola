@@ -39,7 +39,7 @@ ErrorDocument 404 /404.html
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), accelerometer=(), gyroscope=()"
   Header always set Cross-Origin-Opener-Policy "same-origin"
   Header always set X-XSS-Protection "1; mode=block"
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://embed.lu.ma; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://lu.ma https://embed.lu.ma; frame-src https://lu.ma https://embed.lu.ma https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://lu.ma"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://embed.lu.ma https://luma.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://lu.ma https://embed.lu.ma https://luma.com; frame-src https://lu.ma https://embed.lu.ma https://luma.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://lu.ma https://luma.com"
   Header unset X-Powered-By
   Header unset Server
 

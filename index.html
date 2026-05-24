@@ -2,13 +2,25 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Realizac(ja) - społeczność młodych ludzi, którzy nie czekają na "kiedyś"</title>
-  <meta name="description" content="Realizac(ja) to projekt edukacyjny dla osób w wieku 16-24 lat. Warsztaty, networking i spotkania z praktykami biznesu w Warszawie, Gdańsku, Łodzi, Krakowie i Katowicach. Nominacja do Złotego Wilka." />
-  <meta name="keywords" content="Realizacja, projekt edukacyjny, młodzież, biznes, przedsiębiorczość, warsztaty, networking, Zwolnieni z Teorii, Złoty Wilk, Warszawa, Gdańsk, Łódź, Kraków, Katowice" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>Realizac(ja) - warsztaty i networking biznesowy 16-24 lat | Warszawa, Gdańsk, Łódź</title>
+  <meta name="description" content="Realizac(ja) - nagradzany projekt edukacyjny dla młodzieży 16-24 lat. Warsztaty biznesowe, networking, spotkania z praktykami. Działamy w Warszawie, Gdańsku, Łodzi, Krakowie i Katowicach. Nominacja do Złotego Wilka Zwolnionych z Teorii." />
+  <meta name="keywords" content="Realizacja, projekt edukacyjny dla młodzieży, warsztaty biznesowe 16-24, networking dla młodych, przedsiębiorczość młodzieży, Zwolnieni z Teorii, Złoty Wilk, edukacja biznesowa Warszawa, warsztaty Gdańsk, warsztaty Łódź, warsztaty Kraków, warsztaty Katowice" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="author" content="Realizac(ja)" />
+  <meta name="geo.region" content="PL" />
+  <meta name="geo.placename" content="Warszawa, Gdańsk, Łódź, Kraków, Katowice" />
+  <meta name="language" content="Polish" />
   <meta name="theme-color" content="#d31e6f" />
   <link rel="canonical" href="https://realizac-ja.pl/" />
+  <link rel="alternate" hreflang="pl-PL" href="https://realizac-ja.pl/" />
+  <link rel="alternate" hreflang="x-default" href="https://realizac-ja.pl/" />
+  <link rel="preconnect" href="https://luma.com" crossorigin />
+  <link rel="dns-prefetch" href="https://luma.com" />
+  <link rel="preconnect" href="https://embed.lu.ma" crossorigin />
+  <link rel="dns-prefetch" href="https://embed.lu.ma" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pl_PL" />
   <meta property="og:site_name" content="Realizac(ja)" />
@@ -40,32 +52,136 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": ["Organization", "EducationalOrganization"],
         "@id": "https://realizac-ja.pl/#org",
         "name": "Realizac(ja)",
+        "alternateName": "Realizacja",
         "url": "https://realizac-ja.pl/",
-        "logo": "https://realizac-ja.pl/assets/logo/nav-light.png",
-        "description": "Projekt edukacyjny dla osób w wieku 16-24 lat - biznes, przedsiębiorczość, kompetencje przyszłości.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://realizac-ja.pl/assets/logo/nav-light.png",
+          "width": 404,
+          "height": 126
+        },
+        "image": "https://realizac-ja.pl/assets/og-image.png",
+        "description": "Projekt edukacyjny dla osób w wieku 16-24 lat - biznes, przedsiębiorczość, kompetencje przyszłości. Warsztaty, networking i spotkania z praktykami biznesu.",
+        "foundingDate": "2024",
+        "email": "kontakt@realizac-ja.pl",
         "areaServed": [
-          { "@type": "City", "name": "Warszawa" },
-          { "@type": "City", "name": "Gdańsk" },
-          { "@type": "City", "name": "Łódź" },
-          { "@type": "City", "name": "Kraków" },
-          { "@type": "City", "name": "Katowice" }
+          { "@type": "City", "name": "Warszawa", "addressCountry": "PL" },
+          { "@type": "City", "name": "Gdańsk", "addressCountry": "PL" },
+          { "@type": "City", "name": "Łódź", "addressCountry": "PL" },
+          { "@type": "City", "name": "Kraków", "addressCountry": "PL" },
+          { "@type": "City", "name": "Katowice", "addressCountry": "PL" }
         ],
+        "audience": {
+          "@type": "EducationalAudience",
+          "audienceType": "Młodzież 16-24 lat",
+          "geographicArea": { "@type": "Country", "name": "Polska" }
+        },
         "award": [
-          "Brązowy Wilk - Zwolnieni z Teorii",
-          "Srebrny Wilk - Zwolnieni z Teorii",
-          "Nominacja do Złotego Wilka - Zwolnieni z Teorii"
-        ]
+          "Brązowy Wilk - Olimpiada Zwolnieni z Teorii",
+          "Srebrny Wilk - Olimpiada Zwolnieni z Teorii",
+          "Nominacja do Złotego Wilka - Olimpiada Zwolnieni z Teorii"
+        ],
+        "knowsAbout": ["biznes", "marketing", "sprzedaż", "zarządzanie", "rozwój osobisty", "przedsiębiorczość", "networking"],
+        "sameAs": [
+          "https://www.instagram.com/realizac_ja",
+          "https://www.tiktok.com/@realizac.ja",
+          "https://www.facebook.com/people/Realizac-ja/61565586470285/",
+          "https://linktr.ee/kontakt.realizacja"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "kontakt@realizac-ja.pl",
+          "availableLanguage": "pl"
+        }
       },
       {
         "@type": "WebSite",
         "@id": "https://realizac-ja.pl/#website",
         "url": "https://realizac-ja.pl/",
         "name": "Realizac(ja)",
+        "description": "Społeczność młodych ludzi 16-24 lat - warsztaty, networking i edukacja biznesowa.",
         "inLanguage": "pl-PL",
         "publisher": { "@id": "https://realizac-ja.pl/#org" }
+      },
+      {
+        "@type": "Event",
+        "@id": "https://realizac-ja.pl/#event-konferencja",
+        "name": "Konferencja Realizac(ja)",
+        "description": "Konferencja organizowana przez społeczność Realizac(ja) - warsztaty, networking, spotkania z praktykami biznesu.",
+        "startDate": "2026-06-20T11:00:00+02:00",
+        "endDate": "2026-06-20T16:00:00+02:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Warszawa",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Warszawa",
+            "addressCountry": "PL"
+          }
+        },
+        "image": "https://realizac-ja.pl/assets/og-image.png",
+        "organizer": { "@id": "https://realizac-ja.pl/#org" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://luma.com/zkxh7ny5",
+          "price": "0",
+          "priceCurrency": "PLN",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-05-19T00:00:00+02:00"
+        },
+        "isAccessibleForFree": true
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://realizac-ja.pl/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Dla kogo jest projekt Realizac(ja)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dla osób w wieku 16-24 lat, które chcą rozwijać się w obszarze biznesu, marketingu, sprzedaży, zarządzania lub rozwoju osobistego."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "W jakich miastach działa Realizac(ja)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Działamy w Warszawie, Gdańsku, Łodzi, Krakowie i Katowicach."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy udział w wydarzeniach jest płatny?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Większość naszych wydarzeń jest bezpłatna. Szczegóły znajdziesz przy każdym wydarzeniu na platformie Luma."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak się zapisać na wydarzenie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zapisy prowadzimy przez platformę Luma. Wybierz wydarzenie na naszej stronie i kliknij Zapisz się - przekierujemy Cię do formularza rejestracji."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy mogę dołączyć do zespołu Realizac(ja)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Szukamy osób do social media, organizacji wydarzeń, pozyskiwania partnerów i grafiki. Napisz na kontakt@realizac-ja.pl."
+            }
+          }
+        ]
       }
     ]
   }
@@ -96,7 +212,7 @@
 <header class="nav">
   <div class="container nav-inner">
     <a href="/" class="brand" aria-label="Realizac(ja) - strona główna">
-      <img class="brand-mark" src="assets/logo/nav-light.png" alt="Realizac(ja)" />
+      <img class="brand-mark" src="assets/logo/nav-light.png" alt="Realizac(ja)" width="404" height="126" fetchpriority="high" />
     </a>
     <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
       <span></span><span></span><span></span>
@@ -222,13 +338,13 @@
           <span class="medal" aria-hidden="true"><svg class="ico ico-medal" aria-hidden="true"><use href="#ico-medal"/></svg></span>
           <h3>Brązowy Wilk</h3>
           <p>Zwolnieni z Teorii</p>
-          <span class="edition"><span class="dot"></span> 1. edycja</span>
+          <span class="edition"><span class="dot"></span> 2. edycja</span>
         </li>
         <li class="wolf silver">
           <span class="medal" aria-hidden="true"><svg class="ico ico-medal" aria-hidden="true"><use href="#ico-medal"/></svg></span>
           <h3>Srebrny Wilk</h3>
           <p>Zwolnieni z Teorii</p>
-          <span class="edition"><span class="dot"></span> 2. edycja</span>
+          <span class="edition"><span class="dot"></span> 1. edycja</span>
         </li>
         <li class="wolf gold">
           <span class="medal" aria-hidden="true"><svg class="ico ico-medal" aria-hidden="true"><use href="#ico-trophy"/></svg></span>
@@ -301,59 +417,30 @@
           <h2>Co przed <span class="accent">nami?</span></h2>
         </div>
         <p class="head-meta">
-          Zapisy prowadzimy przez Luma. Wybierz wydarzenie poniżej lub przeglądaj cały kalendarz.
+          Zapisy prowadzimy przez Luma - kliknij wydarzenie, żeby zobaczyć szczegóły i się zapisać.
         </p>
-      </div>
-
-      <div class="events reveal reveal-stagger">
-        <article class="event-card">
-          <div class="meta-row">
-            <span class="date-pill">15.05.2026</span>
-            <span class="type-pill">Warsztat</span>
-            <span class="free-pill">Bezpłatne</span>
-          </div>
-          <h3>Jak zacząć swój biznes?</h3>
-          <span class="city">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Warszawa
-          </span>
-          
-          <a class="signup" href="https://lu.ma/realizacja" target="_blank" rel="noopener">
-            Zapisz się
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </a>
-        </article>
-
-        <article class="event-card">
-          <div class="meta-row">
-            <span class="date-pill">22.05.2026</span>
-            <span class="type-pill">Networking</span>
-            <span class="free-pill">Bezpłatne</span>
-          </div>
-          <h3>Networking młodych liderów</h3>
-          <span class="city">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Gdańsk
-          </span>
-          <a class="signup" href="https://lu.ma/realizacja" target="_blank" rel="noopener">
-            Zapisz się
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </a>
-        </article>
       </div>
 
       <div class="luma-wrap reveal">
         <header>
-          <h3>Kalendarz wydarzeń Luma</h3>
-          <span class="badge"><span class="lu-dot"></span> Aktualizowane na żywo</span>
+          <h3>Najbliższe wydarzenie</h3>
+          <a class="badge badge-link" href="https://luma.com/zkxh7ny5" target="_blank" rel="noopener">
+            <span class="lu-dot"></span> Otwórz w Luma
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
         </header>
-        
         <div class="luma-frame">
           <iframe
-            src="https://lu.ma/embed/calendar/cal-realizacja/events?lt=light"
-            title="Kalendarz wydarzeń Realizac(ja) na Luma"
+            src="https://luma.com/embed/event/evt-LYGtx3TT3XDqiKN/simple"
+            title="Wydarzenie Realizac(ja) na Luma"
             loading="lazy"
-            allowfullscreen=""></iframe>
+            allow="fullscreen; payment"></iframe>
+        </div>
+        <div class="luma-cta">
+          <a class="btn btn-primary" href="https://luma.com/zkxh7ny5" target="_blank" rel="noopener">
+            Zapisz się na wydarzenie
+            <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -451,19 +538,32 @@
         </header>
         
         <div class="partner-grid">
-          <div class="partner-slot"><div class="partner-placeholder"><span>R</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>M</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>K</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>B</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>S</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>A</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>P</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>N</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>T</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>V</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>E</span><span>partner</span></div></div>
-          <div class="partner-slot"><div class="partner-placeholder"><span>+</span><span>i wiele więcej</span></div></div>
+          <div class="partner-slot"><img src="assets/partners/patronat-prezydent.webp" alt="Patronat Prezydenta" loading="lazy" width="1642" height="920" /></div>
+          <div class="partner-slot"><img src="assets/partners/tvp-info.webp" alt="TVP Info" loading="lazy" width="2334" height="656" /></div>
+          <div class="partner-slot"><img src="assets/partners/tvp3-warszawa.webp" alt="TVP3 Warszawa" loading="lazy" width="1360" height="962" /></div>
+          <div class="partner-slot"><img src="assets/partners/digital-university.webp" alt="Digital University" loading="lazy" width="1596" height="1054" /></div>
+          <div class="partner-slot"><img src="assets/partners/spoleczna-akademia-nauk.webp" alt="Społeczna Akademia Nauk" loading="lazy" width="500" height="500" /></div>
+          <div class="partner-slot"><img src="assets/partners/sensus.webp" alt="Sensus" loading="lazy" width="1132" height="542" /></div>
+          <div class="partner-slot"><img src="assets/partners/venture-cafe.webp" alt="Venture Cafe" loading="lazy" width="768" height="1150" /></div>
+          <div class="partner-slot"><img src="assets/partners/mapa-karier.webp" alt="Mapa Karier" loading="lazy" width="395" height="200" /></div>
+          <div class="partner-slot"><img src="assets/partners/trampki-na-gieldzie.webp" alt="Trampki na Giełdzie" loading="lazy" width="1420" height="636" /></div>
+          <div class="partner-slot"><img src="assets/partners/four-zeros.webp" alt="Four Zeros" loading="lazy" width="1518" height="664" /></div>
+          <div class="partner-slot"><img src="assets/partners/angielski-to-my.webp" alt="Angielski to my" loading="lazy" width="2560" height="2559" /></div>
+          <div class="partner-slot"><img src="assets/partners/webkorki.webp" alt="webKorki" loading="lazy" width="300" height="200" /></div>
         </div>
+
+        <a class="partner-tech" href="https://kontaktio.pl" target="_blank" rel="noopener noreferrer" aria-label="Kontaktio - wykonawca strony">
+          <img class="partner-tech-logo" src="assets/partners/kontaktio.webp" alt="Kontaktio" loading="lazy" width="44" height="44" />
+          <div class="partner-tech-text">
+            <span class="partner-tech-eyebrow">Wykonawca strony</span>
+            <strong>Kontaktio</strong>
+            <span class="partner-tech-desc">Zaprojektowaliśmy i zbudowaliśmy tę stronę</span>
+          </div>
+          <span class="partner-tech-go">
+            kontaktio.pl
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </span>
+        </a>
 
         <div class="partners-cta">
           <a class="btn btn-primary" href="#contact">
@@ -573,20 +673,17 @@
     <div class="footer-grid">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="assets/logo/nav-dark.png" alt="Realizac(ja)">
+          <img src="assets/logo/nav-dark.png" alt="Realizac(ja)" width="396" height="118" loading="lazy">
         </div>
         <p>Społeczność młodych ludzi, którzy nie czekają na „kiedyś". Rozwój, biznes i kompetencje przyszłości - tu i teraz.</p>
         <div class="footer-social">
-          <a href="https://instagram.com/realizacja" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/realizac_ja" target="_blank" rel="noopener noreferrer" aria-label="Instagram - Realizac(ja)">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           </a>
-          <a href="https://linkedin.com/company/realizacja" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://tiktok.com/@realizacja" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <a href="https://www.tiktok.com/@realizac.ja" target="_blank" rel="noopener noreferrer" aria-label="TikTok - Realizac(ja)">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3v3a4 4 0 0 0 4 4M10 13a4 4 0 1 0 4 4V3"/></svg>
           </a>
-          <a href="https://facebook.com/realizacja" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a href="https://www.facebook.com/people/Realizac-ja/61565586470285/" target="_blank" rel="noopener noreferrer" aria-label="Facebook - Realizac(ja)">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
         </div>
