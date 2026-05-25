@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 
-Sitemap: https://realizac-ja.pl/sitemap.xml
+Sitemap: https://beachbola.pl/sitemap.xml

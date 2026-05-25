@@ -1,18 +1,18 @@
 {
-  "name": "Realizac(ja)",
-  "short_name": "Realizac(ja)",
-  "description": "Społeczność młodych ludzi, którzy nie czekają na „kiedyś\". Projekt edukacyjny dla osób w wieku 16-24 lat.",
+  "name": "Beach Bola — siatkówka plażowa w Łodzi",
+  "short_name": "Beach Bola",
+  "description": "Obiekt do siatkówki plażowej na Stawach Jana w Łodzi. 4 boiska, oświetlenie, bar, rezerwacja online.",
   "lang": "pl-PL",
   "dir": "ltr",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#fcfcfd",
-  "theme_color": "#d31e6f",
+  "background_color": "#faf6ec",
+  "theme_color": "#1c7c3c",
   "icons": [
-    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    { "src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }

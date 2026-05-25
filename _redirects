@@ -1,11 +1,13 @@
-http://realizac-ja.pl/* https://realizac-ja.pl/:splat 301!
-https://www.realizac-ja.pl/* https://realizac-ja.pl/:splat 301!
+http://beachbola.pl/* https://beachbola.pl/:splat 301!
+https://www.beachbola.pl/* https://beachbola.pl/:splat 301!
 
 /index.html / 301!
+/rezerwacja/index.html /rezerwacja/ 301!
 /polityka-prywatnosci/index.html /polityka-prywatnosci/ 301!
 /regulamin/index.html /regulamin/ 301!
 /pliki-cookies/index.html /pliki-cookies/ 301!
 
+/rezerwacja /rezerwacja/ 301
 /polityka-prywatnosci /polityka-prywatnosci/ 301
 /regulamin /regulamin/ 301
 /pliki-cookies /pliki-cookies/ 301

@@ -6,13 +6,7 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), accelerometer=(), gyroscope=()
   Cross-Origin-Opener-Policy: same-origin
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://embed.lu.ma https://luma.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://lu.ma https://embed.lu.ma https://luma.com; frame-src https://lu.ma https://embed.lu.ma https://luma.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://lu.ma https://luma.com
-
-/*.css
-  Cache-Control: public, max-age=31536000, immutable
-
-/*.js
-  Cache-Control: public, max-age=31536000, immutable
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
