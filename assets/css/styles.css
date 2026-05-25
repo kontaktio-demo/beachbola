@@ -280,18 +280,18 @@ h1 .accent { color: var(--sun); }
 .hero-gl.ready { opacity: 1; }
 
 .hero-sun {
-  position: absolute; left: 60%; top: 30%; width: 380px; height: 380px; transform: translate(-50%,-50%);
-  border-radius: 50%; will-change: transform; pointer-events: none; mix-blend-mode: screen; opacity: .9;
-  background: radial-gradient(circle at 50% 50%, rgba(255,246,216,0.9) 0%, rgba(255,228,154,0.6) 30%, rgba(246,189,62,0.32) 52%, rgba(246,189,62,0) 72%);
+  position: absolute; left: 60%; top: 30%; width: 320px; height: 320px; transform: translate(-50%,-50%);
+  border-radius: 50%; will-change: transform; pointer-events: none; mix-blend-mode: screen; opacity: .42;
+  background: radial-gradient(circle at 50% 50%, rgba(255,244,210,0.62) 0%, rgba(255,224,150,0.34) 32%, rgba(246,189,62,0.16) 54%, rgba(246,189,62,0) 72%);
 }
-.hero-sun-core { position: absolute; left: 60%; top: 30%; width: 150px; height: 150px; border-radius: 50%; transform: translate(-50%,-50%); pointer-events: none; background: radial-gradient(circle, #fff7df 0%, #ffe296 46%, #f9c74f 76%, #f3b32a 100%); box-shadow: 0 0 100px 34px rgba(255,214,110,0.5); will-change: transform; }
-.hero-rays { position: absolute; left: 60%; top: 30%; width: 1200px; height: 1200px; transform: translate(-50%,-50%); opacity: .3; mix-blend-mode: screen; pointer-events: none; will-change: transform;
-  background: repeating-conic-gradient(from 0deg at 50% 50%, rgba(255,236,170,0.5) 0deg 3.5deg, transparent 3.5deg 16deg);
-  -webkit-mask: radial-gradient(circle at 50% 50%, #000 8%, rgba(0,0,0,.4) 26%, transparent 52%);
-  mask: radial-gradient(circle at 50% 50%, #000 8%, rgba(0,0,0,.4) 26%, transparent 52%);
+.hero-sun-core { position: absolute; left: 60%; top: 30%; width: 124px; height: 124px; border-radius: 50%; transform: translate(-50%,-50%); pointer-events: none; opacity: .8; background: radial-gradient(circle, #fdeec6 0%, #f7d98a 48%, #ecbb55 78%, #d99f2e 100%); box-shadow: 0 0 56px 14px rgba(240,200,110,0.26); will-change: transform; }
+.hero-rays { position: absolute; left: 60%; top: 30%; width: 1100px; height: 1100px; transform: translate(-50%,-50%); opacity: .12; mix-blend-mode: screen; pointer-events: none; will-change: transform;
+  background: repeating-conic-gradient(from 0deg at 50% 50%, rgba(255,232,160,0.4) 0deg 3.5deg, transparent 3.5deg 16deg);
+  -webkit-mask: radial-gradient(circle at 50% 50%, #000 8%, rgba(0,0,0,.4) 24%, transparent 48%);
+  mask: radial-gradient(circle at 50% 50%, #000 8%, rgba(0,0,0,.4) 24%, transparent 48%);
 }
 
-.hero-haze { position: absolute; left: 0; right: 0; top: 44%; height: 30%; background: linear-gradient(180deg, transparent, rgba(255,221,150,0.28) 60%, transparent); filter: blur(6px); }
+.hero-haze { position: absolute; left: 0; right: 0; top: 44%; height: 30%; background: linear-gradient(180deg, transparent, rgba(255,221,150,0.14) 60%, transparent); filter: blur(6px); }
 
 .hero-palm { position: absolute; bottom: 0; color: #0b1f13; opacity: .92; will-change: transform; }
 .hero-palm svg { display: block; }
@@ -301,16 +301,11 @@ h1 .accent { color: var(--sun); }
 .hero-dunes { position: absolute; left: -2px; right: -2px; bottom: -1px; z-index: 1; line-height: 0; pointer-events: none; }
 .hero-dunes svg { display: block; width: 100%; height: auto; }
 
-.hero-particles { position: absolute; inset: 0; pointer-events: none; }
-.hero-particles i { position: absolute; display: block; width: 6px; height: 6px; border-radius: 50%; background: rgba(255,240,200,0.7); box-shadow: 0 0 8px rgba(255,235,180,0.7); animation: floatUp linear infinite; }
-@keyframes floatUp { 0% { transform: translateY(20px); opacity: 0; } 12% { opacity: .8; } 88% { opacity: .7; } 100% { transform: translateY(-120px); opacity: 0; } }
-@media (prefers-reduced-motion: reduce) { .hero-particles { display: none; } }
-
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
   background:
-    linear-gradient(to top, rgba(7, 20, 13, 0.92) 4%, rgba(7, 20, 13, 0.58) 32%, rgba(7, 20, 13, 0.18) 58%, rgba(7, 20, 13, 0) 78%),
-    radial-gradient(130% 95% at 18% 102%, rgba(7, 20, 13, 0.55), transparent 58%);
+    linear-gradient(to top, rgba(6, 17, 11, 0.95) 4%, rgba(6, 17, 11, 0.72) 34%, rgba(6, 17, 11, 0.4) 60%, rgba(6, 17, 11, 0.2) 80%, rgba(6, 17, 11, 0.28) 100%),
+    radial-gradient(135% 100% at 18% 104%, rgba(6, 17, 11, 0.6), transparent 60%);
 }
 .hero > .container { position: relative; z-index: 3; padding-top: 124px; padding-bottom: 66px; width: 100%; }
 .hero .eyebrow { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.24); color: #fff; backdrop-filter: blur(4px); }

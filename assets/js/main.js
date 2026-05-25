@@ -27,7 +27,7 @@
   if (hasGSAP && window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
 
   if (animate) {
-    var heroBits = ['.hero .eyebrow', '.hero h1', '.hero .lead', '.hero-actions', '.trust-strip'];
+    var heroBits = ['.hero h1', '.hero .lead', '.hero-actions', '.trust-strip'];
     gsap.set(heroBits, { opacity: 0, y: 30 });
     gsap.to(heroBits, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12, delay: 0.15 });
 
